@@ -1,0 +1,10 @@
+{
+  "telemetry.enableCrashReporter": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "java.configuration.updateBuildConfiguration": "disabled"
+}

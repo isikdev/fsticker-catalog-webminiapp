@@ -1,0 +1,47 @@
+@use "sass:color";
+@use 'src/app/styles/theme.scss';
+
+.Main {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  overflow: hidden;
+  padding: 0px;
+  // overscroll-behavior: none none;  
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.android {
+    overflow: scroll;
+  }
+
+  .sticker {
+    width: fit-content;
+    padding: 1rem .5rem;
+
+    border-radius: .5rem;
+    background-size: 500% 500%;
+
+    & div {
+      border-radius: .5rem;
+
+      background: var(--tg-theme-hint-button-hsl-color);
+
+      &.backgroundNone {
+        background: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
